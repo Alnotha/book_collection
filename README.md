@@ -1,1 +1,1 @@
-# book_collection
+This is the book collection project
