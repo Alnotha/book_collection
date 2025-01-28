@@ -1,11 +1,29 @@
-<% content_for :title, "New book" %>
+<%= form_with(model: @book, local: true) do |form| %>
+  <h1>Create New Book</h1>
 
-<h1>New book</h1>
+  <div class="form-group">
+    <%= form.label :title, "Book Title" %>
+    <%= form.text_field :title, class: "form-control", placeholder: "Enter Book Title" %>
+  </div>
 
-<%= render "form", book: @book %>
+  <div class="form-group">
+    <%= form.label :author, "Author" %>
+    <%= form.text_field :author, class: "form-control", placeholder: "Enter Author Name" %>
+  </div>
 
-<br>
+  <div class="form-group">
+    <%= form.label :price, "Price" %>
+    <%= form.number_field :price, step: "0.01", class: "form-control", placeholder: "Enter Price" %>
+  </div>
 
-<div>
-  <%= link_to "Back to books", books_path %>
-</div>
+  <div class="form-group">
+    <%= form.label :published_date, "Published Date" %>
+    <%= form.date_field :published_date, class: "form-control" %>
+  </div>
+
+  <div class="form-actions">
+    <%= form.submit "Create Book", class: "btn btn-primary" %>
+  </div>
+<% end %>
+
+<%
