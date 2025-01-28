@@ -23,7 +23,7 @@ class BooksTest < ApplicationSystemTestCase
       assert_text "Book was successfully destroyed"
     end
   end
-  
+
 
   test "should create book" do
     visit books_url
@@ -37,10 +37,10 @@ class BooksTest < ApplicationSystemTestCase
   end
 
   assert_selector "h1", text: "Books"
-  assert_difference('Book.count', -1) do
+  assert_difference("Book.count", -1) do
     click_on "Destroy", match: :first
   end
-  
+
 
 
   test "should update Book" do
