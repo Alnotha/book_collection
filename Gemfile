@@ -72,14 +72,11 @@ gem "rails", "~> 7.2.2", ">= 7.2.2.1"
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
-
-# Fixes version issues with StringIO
 gem "stringio", "3.1.2"
 
-# Use error_highlight for better error reporting
-gem "error_highlight", "0.7.0"
 
-# Use PostgreSQL as the database for Active Record
+# Use postgresql as the database for Active Record
+
 gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
@@ -134,6 +131,11 @@ end
 group :development do
   # Use console on exception pages [https://github.com/rails/web-console]
   gem "web-console"
+
+
+  # Highlight the fine-grained location where an error occurred [https://github.com/ruby/error_highlight]
+
+  gem "error_highlight", "0.7.0", platforms: [ :ruby ]
 end
 
 group :test do
