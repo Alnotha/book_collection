@@ -25,20 +25,20 @@ class BooksTest < ApplicationSystemTestCase
     click_on "Back"
   end
 
-  # test "should update book" do
-  #   visit book_url(@book)
-  #   click_on "Edit this book", match: :first
+  test "should update book" do
+    visit book_url(@book)
+    click_on "Edit this book", match: :first
 
-  #   fill_in "Title", with: "Updated Title"
-  #   fill_in "Author", with: "Jane Doe"
-  #   fill_in "Price", with: "10.99"
-  #   fill_in "Published Date", with: "2025-01-01"
+    fill_in "Title", with: "Updated Title"
+    fill_in "Author", with: "Jane Doe"
+    fill_in "Price", with: "10.99"
+    fill_in "Published Date", with: "2025-01-01"
 
-  #   click_on "Update Book"
+    click_on "Update Book"
 
-  #   assert_text "Book was successfully updated"
-  #   click_on "Back"
-  # end
+    assert_text "Book was successfully updated"
+    click_on "Back"
+  end
 
   # test "should destroy book" do
   #   visit books_url
@@ -53,4 +53,5 @@ class BooksTest < ApplicationSystemTestCase
   #   assert_no_text @book.title
   #   assert_text "Book was successfully destroyed"
   # end
+
 end
