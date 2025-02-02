@@ -1,6 +1,6 @@
 {
-    "name": "test-app",
-    "description": "For Testing and Learning Heroku",
+    "name": "Your App Name",
+    "description": "Your app description here.",
     "stack": "heroku-20",
     "environments": {
       "test": {
