@@ -11,7 +11,7 @@ class BooksTest < ApplicationSystemTestCase
   # end
 
   # test "should create book" do
-  #   visit new_book_ur
+  #   visit new_book_url
   #   fill_in "Title", with: "New Test Book"
   #   fill_in "Author", with: "John Doe"
   #   fill_in "Price", with: "12.99"

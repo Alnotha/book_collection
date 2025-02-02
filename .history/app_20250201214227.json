@@ -1,0 +1,13 @@
+{
+    "stack" : "heroku-20"
+}
+{
+    "environments": {
+      "test": {
+        "scripts": {
+          "test-setup": "echo 'Setting up Review App...'"
+        }
+      }
+    }
+  }
+  

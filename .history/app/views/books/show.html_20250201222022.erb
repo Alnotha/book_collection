@@ -9,7 +9,5 @@
 </div>
 
 <div style="margin-top: 20px;">
-  <%= form_with url: book_path(@book), method: :delete do %>
-    <%= submit_tag "Destroy this book", data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
-  <% end %>
+  <%= button_to "Destroy this book", @book, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
 </div>
