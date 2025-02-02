@@ -1,15 +1,15 @@
+<p style="color: green"><%= notice %></p>
+
 <h1><%= @book.title %></h1>
 <p><strong>Author:</strong> <%= @book.author %></p>
 <p><strong>Price:</strong> $<%= @book.price %></p>
 <p><strong>Published Date:</strong> <%= @book.published_date.strftime("%B %d, %Y") %></p>
 
 <div>
-  <%= link_to "Edit this book", edit_book_path(@book), class: "btn btn-warning" %>
+  <%= link_to "Edit this book", edit_book_path(@book), class: "btn btn-warning" %> |
   <%= link_to "Back to books", books_path, class: "btn btn-secondary" %>
 </div>
 
 <div style="margin-top: 20px;">
-  <%= form_with url: book_path(@book), method: :delete do %>
-    <%= submit_tag "Destroy this book", data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
-  <% end %>
+  <%= button_to "Destroy this book", @book, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
 </div>
