@@ -13,8 +13,6 @@ module TestApp
 
     # Disable master key requirement to avoid needing `RAILS_MASTER_KEY`
     config.require_master_key = false
-    config.read_encrypted_secrets = false
-
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
