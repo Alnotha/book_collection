@@ -11,9 +11,6 @@ module TestApp
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.2
 
-    # Disable master key requirement to avoid needing `RAILS_MASTER_KEY`
-    config.require_master_key = false
-
     # Please, add to the `ignore` list any other `lib` subdirectories that do
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
     # Common ones are `templates`, `generators`, or `middleware`, for example.
