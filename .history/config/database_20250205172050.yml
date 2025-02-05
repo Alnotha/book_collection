@@ -1,16 +1,16 @@
 default: &default
   adapter: postgresql
-  encoding: anicode
+  encoding: unicode
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: test_app_development
+  url: <%= ENV["DATABASE_URL"] %>
 
 test:
   <<: *default
-  database: test_app_test
+  url: <%= ENV["DATABASE_URL"] %>
 
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>  # <--- This ensures Rails connects to Heroku's DB
+  url: <%= ENV["DATABASE_URL"] %>
