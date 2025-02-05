@@ -32,3 +32,5 @@
 /public/assets
 
 /config/credentials/production.key
+
+/config/master.key
