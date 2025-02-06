@@ -1,11 +1,13 @@
 # source "https://rubygems.org"
-ruby "3.3.0"
+ruby "3.3.0"# Or the latest stable version
 
 # # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 # gem "rails", "~> 7.2.2", ">= 7.2.2.1"
 # # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 # gem "sprockets-rails"
 # gem "stringio", "3.1.2"
+heroku config:set DATABASE_URL="postgres://u3d584q4fo7o3s:p33fb7f754c7c2e7b7ec346dcd3af6c77d401bb0071381ab815a87d466b7a8dc7@c97r84s7psuajm.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/d6nfcqrrvk50r" --app stage-test-app-1-test-app
+
 
 # gem "error_highlight", "0.7.0"
 
@@ -116,7 +118,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   # Debugging tools for Rails applications
-  # gem "debug", platforms: %i[mri mswin mswin64 mingw x64_mingw], require: "debug/prelude"
+  gem "debug", platforms: %i[mri mswin mswin64 mingw x64_mingw], require: "debug/prelude"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false

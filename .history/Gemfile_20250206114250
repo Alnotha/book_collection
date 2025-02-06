@@ -116,7 +116,7 @@ gem "bootsnap", require: false
 
 group :development, :test do
   # Debugging tools for Rails applications
-  # gem "debug", platforms: %i[mri mswin mswin64 mingw x64_mingw], require: "debug/prelude"
+  gem "debug", platforms: %i[mri mswin mswin64 mingw x64_mingw], require: "debug/prelude"
 
   # Static analysis for security vulnerabilities [https://brakemanscanner.org/]
   gem "brakeman", require: false
