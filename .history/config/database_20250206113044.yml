@@ -21,5 +21,5 @@ production:
   database: d6nfcqrrvk50r  
   username: u3d584q4fo7o3s 
   password: <%= ENV['DATABASE_PASSWORD'] %>
-  host: c97r84s7psuajm.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com  
+  host: c97r84s7psuajm.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com  # Ensure this matches the host
 

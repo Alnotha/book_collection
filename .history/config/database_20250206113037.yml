@@ -18,8 +18,8 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: d6nfcqrrvk50r  
-  username: u3d584q4fo7o3s 
+  database: d6nfcqrrvk50r  # Ensure this matches the DATABASE_URL value!
+  username: u3d584q4fo7o3s  # Match the username from DATABASE_URL
   password: <%= ENV['DATABASE_PASSWORD'] %>
-  host: c97r84s7psuajm.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com  
+  host: c97r84s7psuajm.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com  # Ensure this matches the host
 
